@@ -3,9 +3,7 @@
 body {
   /* font-family: "Philosopher", sans-serif; */
   font-family: "Roboto", sans-serif;
-  width: 1140px;
-  margin: 0 auto;
-
+  /* margin: 0 auto; */
 }
 .button {
   background-color: #dc780b;
@@ -16,41 +14,59 @@ body {
   font-size: 13px;
   cursor: pointer;
 }
+.button:hover {
+  background-color: #ffffff;
+  color: #dc780b;
+  transition: all ease 0.3s;
+}
+.button-white {
+  border: 1px solid #dc780b;
+  background-color: #ffffff;
+  color: #dc780b;
+  margin-left: 15px;
+}
+.button-white:hover {
+  background-color: #dc780b;
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
 .section {
-    padding-top: 100px;
-    /* padding-bottom: 50px; */
-    
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 100px;
+  /* padding-bottom: 50px; */
 }
 .section-description {
-    font-size: 16px;
-    line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .section-title {
-    font-family: "Philosopher", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 35px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
 }
 .section-item-title {
-    font-family: "Philosopher", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 15px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .section-subtitle {
-    color: #dc780b;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-bottom: 13px;
-    /* letter-spacing: ; */
+  color: #dc780b;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  /* letter-spacing: ; */
 }
 
 .header {
   height: 70px;
   vertical-align: middle;
+  padding-top: 0;
 }
 .header img,
 .header button,
@@ -66,7 +82,7 @@ body {
   margin-right: 40px;
 }
 .header-nav li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 .header-nav ul {
   margin-right: 280px;
@@ -76,102 +92,99 @@ body {
   color: #d1d1d1;
 }
 .header-nav li a:hover {
-    color: #dc780b;
+  color: #dc780b;
 }
 
+.banner-section {
+  padding-top: 0;
+}
 .container,
 .banner-section img {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 .container {
-    width: 40%;
+  width: 40%;
 }
 .banner-section h1 {
-    font-family: "Philosopher", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    line-height: 57px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 57px;
 }
 .banner-section p {
-    margin-bottom: 40px;
-}
-.button-white {
-    border: 1px solid #dc780b;
-    background-color: #ffffff;
-    color: #dc780b;
-    margin-left: 15px;
+  margin-bottom: 40px;
 }
 
 .features-container > div {
-    display: inline-block;
-    width: 33%;
-    /* margin-right: 15px; */
+  display: inline-block;
+  width: 33%;
+  /* margin-right: 15px; */
 }
 .features-container div img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .features-container div h2,
 .features-container div p {
-    text-align: center;
+  text-align: center;
 }
 
 .section-about img,
 .section-about div {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 .section-about img {
-    margin-right: 80px;
+  margin-right: 80px;
 }
 .section-about div {
-    width: 40%;
+  width: 40%;
 }
 .section-about-subtitle,
 .section-about-title {
-    text-align: left;
+  text-align: left;
 }
 .section-about-button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .section-menu-description {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 40px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .section-menu-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .section-menu-container:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-.section-menu-container > div{
-    display: inline-block;
-    width: 32%;
-    border: 1px solid #d1d1d1;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 8px;
-    box-sizing: border-box;
-    margin-right: 15px;
+.section-menu-container > div {
+  display: inline-block;
+  width: 32%;
+  border: 1px solid #d1d1d1;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 8px;
+  box-sizing: border-box;
+  margin-right: 15px;
 }
 .section-menu-container > div:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 .section-menu-container img {
-    width: 100%; 
-    border-top-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    border-top-right-radius: 8px;
+  width: 100%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-right-radius: 8px;
 }
 
 .item-title-wrap h2,
 .item-title-wrap p {
-    display: inline-block;
+  display: inline-block;
 }
 /* .section-item-wrap p {
     text-align: right;
@@ -180,25 +193,48 @@ body {
     text-align: left;
 } */
 .section-item-wrap {
-    padding: 15px;
+  padding: 15px;
 }
 .rate-wrap {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .rate-wrap > div {
-    display: inline-block;
-    color: #dc780b;
+  display: inline-block;
+  color: #dc780b;
 }
 .star-grey {
-    color: #d1d1d1;
+  color: #d1d1d1;
 }
 .fa-star {
-    font-size: 14px;
+  font-size: 14px;
 }
 .rate-wrap > div:first-child {
-    margin-right: 180px;
+  margin-right: 180px;
 }
 .section-menu button {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-takeaway {
+  background-color: #fbf1e7;
+  width: 100%;
+}
+.section-takeaway-container {
+  margin: 0 auto;
+  width: 900px;
+}
+.section-takeaway div,
+.section-takeaway img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.section-takeaway-container > div {
+  width: 50%;
+}
+.section-takeaway div {
+  margin-right: 70px;
+}
+.section-takeaway img {
+  border-radius: 60px;
 }
