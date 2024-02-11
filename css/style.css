@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  /* font-family: "Philosopher", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  width: 1140px;
+  margin: 0 auto;
+
+}
+.button {
+  background-color: #dc780b;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 1px solid #dc780b;
+  font-size: 13px;
+  cursor: pointer;
+}
+.section {
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+    
+}
+.section-description {
+    font-size: 16px;
+    line-height: 24px;
+}
+.section-title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section-item-title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.section-subtitle {
+    color: #dc780b;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    /* letter-spacing: ; */
+}
+
+.header {
+  height: 70px;
+  vertical-align: middle;
+}
+.header img,
+.header button,
+.header nav {
+  display: inline-block;
+}
+.header img {
+  margin-right: 70px;
+  cursor: pointer;
+}
+.header-nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.header-nav ul {
+  margin-right: 280px;
+}
+.header-nav li a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+.header-nav li a:hover {
+    color: #dc780b;
+}
+
+.container,
+.banner-section img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.container {
+    width: 40%;
+}
+.banner-section h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 57px;
+}
+.banner-section p {
+    margin-bottom: 40px;
+}
+.button-white {
+    border: 1px solid #dc780b;
+    background-color: #ffffff;
+    color: #dc780b;
+    margin-left: 15px;
+}
+
+.features-container > div {
+    display: inline-block;
+    width: 33%;
+    /* margin-right: 15px; */
+}
+.features-container div img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.features-container div h2,
+.features-container div p {
+    text-align: center;
+}
+
+.section-about img,
+.section-about div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.section-about img {
+    margin-right: 80px;
+}
+.section-about div {
+    width: 40%;
+}
+.section-about-subtitle,
+.section-about-title {
+    text-align: left;
+}
+.section-about-button {
+    margin-top: 40px;
+}
+
+.section-menu-description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-menu-container > div{
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #d1d1d1;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 8px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.section-menu-container img {
+    width: 100%; 
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 8px;
+}
+
+.item-title-wrap h2,
+.item-title-wrap p {
+    display: inline-block;
+}
+/* .section-item-wrap p {
+    text-align: right;
+}
+.section-item-wrap h2 {
+    text-align: left;
+} */
+.section-item-wrap {
+    padding: 15px;
+}
+
+
