@@ -60,7 +60,7 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 13px;
-  /* letter-spacing: ; */
+  letter-spacing: 3px;
 }
 
 .header {
@@ -200,13 +200,13 @@ body {
 }
 .rate-wrap > div {
   display: inline-block;
+}
+.fa-star {
   color: #dc780b;
+  font-size: 14px;
 }
 .star-grey {
   color: #d1d1d1;
-}
-.fa-star {
-  font-size: 14px;
 }
 .rate-wrap > div:first-child {
   margin-right: 180px;
@@ -243,18 +243,81 @@ body {
 .button-apple {
   background-color: #000000;
   border: 1px solid #000000;
+  color: #ffffff;
   margin-right: 15px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.button-apple:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all ease 0.3s;
 }
 .button-google {
   background-color: #ffffff;
   border: 1px solid #d1d1d1;
   color: #000000;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 13px;
 }
-/* .button-google:hover {
-  background-color: #ffffff;
-  color: #000000;
-} */
+.button-google:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
 .section-takeaway-subtitle,
 .section-takeaway-title {
   text-align: left;
+}
+
+.section-testimonial {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.section-testimonial-container {
+  margin: 0 auto;
+  width: 60%;
+}
+.section-testimonial img {
+  margin: 50px 0 30px;
+}
+.section-testimonial img + p {
+  margin-bottom: 20px;
+}
+.section-testimonial h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+.section-testimonial h4 + p {
+  font-size: 12px;
+}
+
+.section-contact {
+  background-color: #fbf1e7;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.section-contact div {
+  width: 60%;
+  margin: 0 auto;
+}
+.section-contact form {
+  font-size: 0;
+}
+.section-contact form input {
+  border: none;
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.section-contact form button {
+  border: none;
+  padding: 20px 25px;
+  border-radius: 8px;
+  background-color: #dc780b;
+  color: #ffffff;
 }
