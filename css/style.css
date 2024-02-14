@@ -3,11 +3,10 @@
 body {
   /* font-family: "Philosopher", sans-serif; */
   font-family: "Roboto", sans-serif;
-  /* margin: 0 auto; */
 }
 .button {
   background-color: #dc780b;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: 6px;
   color: #ffffff;
   border: 1px solid #dc780b;
@@ -30,13 +29,14 @@ body {
   color: #ffffff;
   transition: all ease 0.3s;
 }
-.section {
+.center-content {
   width: 1140px;
   margin: 0 auto;
-  padding-top: 100px;
-  /* padding-bottom: 50px; */
 }
-.section-description {
+.section-mt {
+  margin-top: 100px;
+}
+.description {
   font-size: 16px;
   line-height: 24px;
 }
@@ -46,8 +46,9 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 35px;
+  line-height: 40px;
 }
-.section-item-title {
+.item-title {
   font-family: "Philosopher", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -63,29 +64,30 @@ body {
   letter-spacing: 3px;
 }
 
+/* ----- Header ----- */
 .header {
   height: 70px;
-  vertical-align: middle;
-  padding-top: 0;
+  display: flex;
+  align-items: center;
 }
-.header img,
-.header button,
-.header nav {
-  display: inline-block;
+.header div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header img {
-  margin-right: 70px;
+  margin-right: 120px;
   cursor: pointer;
 }
 .header-nav li {
-  display: inline-block;
   margin-right: 40px;
 }
 .header-nav li:last-child {
   margin-right: 0;
 }
 .header-nav ul {
-  margin-right: 280px;
+  display: flex;
 }
 .header-nav li a {
   text-decoration: none;
@@ -95,149 +97,130 @@ body {
   color: #dc780b;
 }
 
-.banner-section {
-  padding-top: 0;
+/* ----- Banner ----- */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.container,
-.banner-section img {
-  display: inline-block;
-  vertical-align: middle;
-}
-.container {
-  width: 40%;
-}
-.banner-section h1 {
+.banner h1 {
   font-family: "Philosopher", sans-serif;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 40px;
   line-height: 57px;
 }
-.banner-section p {
+.banner p {
   margin-bottom: 40px;
 }
 
+/* ----- Features ----- */
+.features-container {
+  display: flex;
+}
 .features-container > div {
-  display: inline-block;
-  width: 33%;
-  /* margin-right: 15px; */
+  text-align: center;
+  margin-right: 20px;
+}
+.features-container > div:last-child {
+  margin-right: 0;
 }
 .features-container div img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-.features-container div h2,
-.features-container div p {
-  text-align: center;
+  margin-bottom: 30px;
+  width: 45px;
 }
 
-.section-about img,
-.section-about div {
-  display: inline-block;
-  vertical-align: middle;
+/* ----- About ----- */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.section-about img {
+.about img {
   margin-right: 80px;
 }
-.section-about div {
-  width: 40%;
-}
-.section-about-subtitle,
-.section-about-title {
+.about-subtitle,
+.about-title {
   text-align: left;
 }
-.section-about-button {
+.about-button {
   margin-top: 40px;
 }
 
-.section-menu-description {
-  width: 70%;
+/* ----- Menu ----- */
+.menu-description {
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
 }
-.section-menu-container {
-  margin-bottom: 30px;
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
 }
-.section-menu-container:last-child {
-  margin-bottom: 0;
+.item-wrap {
+  padding: 20px;
 }
-.section-menu-container > div {
-  display: inline-block;
+.item-text-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-container > div {
   width: 32%;
   border: 1px solid #d1d1d1;
   border-top-left-radius: 70px;
   border-top-right-radius: 8px;
   box-sizing: border-box;
-  margin-right: 15px;
 }
-.section-menu-container > div:last-child {
-  margin-right: 0;
-}
-.section-menu-container img {
+.menu-container img {
   width: 100%;
   border-top-left-radius: 70px;
   border-bottom-right-radius: 70px;
   border-top-right-radius: 8px;
 }
-
-.item-title-wrap h2,
-.item-title-wrap p {
-  display: inline-block;
-}
-/* .section-item-wrap p {
-    text-align: right;
-}
-.section-item-wrap h2 {
-    text-align: left;
-} */
-.section-item-wrap {
-  padding: 15px;
-}
 .rate-wrap {
   margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-.rate-wrap > div {
-  display: inline-block;
-}
-.fa-star {
+.fa-star,
+.fa-plus {
   color: #dc780b;
   font-size: 14px;
 }
 .star-grey {
   color: #d1d1d1;
 }
-.rate-wrap > div:first-child {
-  margin-right: 180px;
-}
-.section-menu button {
+.menu button {
   display: block;
   margin: 0 auto 20px;
 }
 
-.section-takeaway {
+/* ----- Takeaway ----- */
+.takeaway {
   background-color: #fbf1e7;
   width: 100%;
-  /* padding-top: 100px; */
 }
-.section-takeaway-container {
-  margin: 0 auto;
-  width: 900px;
+.takeaway-subtitle,
+.takeaway-title {
+  text-align: left;
 }
-.section-takeaway-wrap,
-.section-takeaway img {
-  display: inline-block;
-  vertical-align: middle;
+.takeaway-container {
+  /* margin: 0 auto; */
+  width: 950px;
+  display: flex;
+  align-items: center;
 }
-.section-takeaway-wrap {
-  width: 50%;
+.takeaway-wrap {
   margin-right: 70px;
 }
-.section-takeaway img {
+.takeaway img {
   border-radius: 60px;
 }
-.section-takeaway-wrap p {
+.takeaway-wrap p {
   margin-bottom: 40px;
 }
 .button-apple {
@@ -256,7 +239,7 @@ body {
   transition: all ease 0.3s;
 }
 .button-google {
-  background-color: #ffffff;
+  background-color: transparent;
   border: 1px solid #d1d1d1;
   color: #000000;
   padding: 8px 15px;
@@ -268,66 +251,106 @@ body {
   color: #ffffff;
   transition: all ease 0.3s;
 }
-.section-takeaway-subtitle,
-.section-takeaway-title {
-  text-align: left;
-}
 
-.section-testimonial {
+/* ----- Testimonial ----- */
+.testimonial {
   text-align: center;
   margin-bottom: 70px;
 }
-.section-testimonial-container {
+.testimonial-container {
   margin: 0 auto;
   width: 60%;
 }
-.section-testimonial img {
+.testimonial img {
   margin: 50px 0 30px;
 }
-.section-testimonial img + p {
+.testimonial img + p {
   margin-bottom: 20px;
 }
-.section-testimonial h4 {
+.testimonial h4 {
   text-transform: uppercase;
   font-size: 16px;
   margin: 20px 0 10px;
 }
-.section-testimonial h4 + p {
+.testimonial h4 + p {
   font-size: 12px;
 }
 
-.section-contact {
+/* ----- Contact ----- */
+.contact {
   background-color: #fbf1e7;
   padding-top: 100px;
   padding-bottom: 120px;
 }
-.section-contact div {
+.contact div {
   margin: 0 auto;
   width: 60%;
 }
-.section-contact form {
+.contact form {
   font-size: 0;
-
 }
-.section-contact form div {
+.contact form div {
   margin: 0 auto;
 }
-.section-contact form input {
-  border: none;
+.contact form input {
+  border: 1px solid #ffffff;
   width: 400px;
   padding: 20px;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
-.section-contact form button {
+.contact form button {
   padding: 20px 25px;
 }
-.section-contact form input,
-.section-contact form button {
+.contact form input,
+.contact form button {
   display: inline-block;
 }
-.section-contact form input:focus {
+.contact form input:focus {
   outline: none;
 }
-.section-contact form input:focus::placeholder {
+.contact form input:focus::placeholder {
   color: transparent;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background-color: #252525;
+}
+.footer img {
+  margin-bottom: 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.footer-container div span {
+  display: block;
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.footer-container li {
+  margin-bottom: 15px;
+}
+.footer-container li a {
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.footer-container div h2 {
+  font-family: "Philosopher", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.socials-icon {
+  color: #d1d1d1;
+  margin-right: 10px;
+}
+.socials-icon:last-child {
+  margin-right: 0;
 }
