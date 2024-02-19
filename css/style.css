@@ -109,6 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .banner__title {
   font-family: "Philosopher", sans-serif;
@@ -120,10 +121,17 @@ body {
 .banner__description {
   margin-bottom: 40px;
 }
+.banner__img-shadow {
+  position: absolute;
+  bottom: -90px;
+  right: 8%;
+  z-index: 1;
+}
 
 /* ----- Features ----- */
 .features__content {
   display: flex;
+  margin-bottom: 30px;
 }
 .features-item {
   padding: 20px;
@@ -131,6 +139,9 @@ body {
   text-align: center;
   margin-right: 20px;
   position: relative;
+}
+.features-item__title {
+  margin-top: 30px;
 }
 .features-item:hover {
   border-radius: 8px;
@@ -140,19 +151,35 @@ body {
   margin-right: 0;
 }
 .features-item__img {
-  margin-bottom: 30px;
+  margin-top: 20px;
   width: 45px;
+}
+.features-item__bg {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 45px);
 }
 
 
 /* ----- About ----- */
 .about {
+  position: relative;
+}
+.about__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .about__img {
   margin-right: 80px;
+  border-radius: 40px;
+
+}
+.about__img-vector {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  z-index: -1;
 }
 .about__subtitle,
 .about__title {
@@ -279,6 +306,13 @@ body {
 .testimonial__container {
   margin: 0 auto;
   width: 60%;
+  position: relative;
+}
+.testimonial__img-vector {
+  position: absolute;
+  right: 45%;
+  top: 40%;
+  z-index: -1;
 }
 .testimonial__img {
   margin: 50px 0 30px;
