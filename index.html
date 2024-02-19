@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Good Food</title>
@@ -12,7 +18,7 @@
       <img class="header__logo logo" src="./img/logo.svg" alt="Food Logo" />
       <nav class="menu-bar">
         <ul class="menu-bar__items">
-          <li class="menu-bar__list"><a class="menu-bar__link" href="#">Home</a></li>
+          <li class="menu-bar__list"><a class="menu-bar__link menu-bar__link--active" href="#">Home</a></li>
           <li class="menu-bar__list"><a class="menu-bar__link" href="#">About us</a></li>
           <li class="menu-bar__list"><a class="menu-bar__link" href="#">Menu</a></li>
           <li class="menu-bar__list"><a class="menu-bar__link" href="#">Features</a></li>
@@ -41,13 +47,15 @@
         <div class="features__content">
           <div class="features-item">
             <img class="features-item__img" src="./img/house-features-icon.svg" alt="House Icon" />
+            <img class="features-item__bg" src="./img/Ellipse_1.svg" alt="Ellipse">
             <h2 class="features-item__title item-title">Quality Food</h2>
             <p class="features-item__description description">
               It can be a very secure path to earn good money and make you very successful creative entrepreneur.
             </p>
           </div>
           <div class="features-item">
-            <img class="features-item__img" src="./img/delivery-features-icon.svg" alt="Delivery Man Icon" />
+              <img class="features-item__img" src="./img/delivery-features-icon.svg" alt="Delivery Man Icon" />
+              <img class="features-item__bg" src="./img/Ellipse_2.svg" alt="Ellipse">
             <h2 class="features-item__title item-title">Food Delivery</h2>
             <p class="features-item__description description">
               It can be a very secure path to earn good money and make you very successful creative entrepreneur.
@@ -55,6 +63,7 @@
           </div>
           <div class="features-item">
             <img class="features-item__img" src="./img/smile-features-icon.svg" alt="Smile Icon" />
+            <img class="features-item__bg" src="./img/Ellipse_3.svg" alt="Ellipse">
             <h2 class="features-item__title item-title">Super Taste</h2>
             <p class="features-item__description description">
               It can be a very secure path to earn good money and make you very successful creative entrepreneur.
@@ -220,6 +229,15 @@
         <button class="button button-white">Learn More</button>
       </section>
 
+      <!-- <section class="menu-boot">
+        <div class="card">
+          <img src="./img/menu-section-images/veggie-muffin_1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </section> -->
+
       <section class="takeaway">
         <div class="takeaway__container center-content">
           <div class="takeaway__content">
@@ -318,6 +336,12 @@
         </nav>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://kit.fontawesome.com/377e5fbd8a.js" crossorigin="anonymous"></script>
   </body>
 </html>
