@@ -35,7 +35,8 @@ body {
 .section-mt {
   margin-top: 100px;
 }
-.description {
+.description,
+.card-text {
   font-size: 16px;
   line-height: 24px;
 }
@@ -47,7 +48,8 @@ body {
   margin-bottom: 35px;
   line-height: 40px;
 }
-.item-title {
+.item-title,
+.card-title {
   font-family: "Philosopher", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -178,7 +180,7 @@ body {
 .about__img-vector {
   position: absolute;
   left: 0;
-  top: -50%;
+  top: -45%;
   z-index: -1;
 }
 .about__subtitle,
