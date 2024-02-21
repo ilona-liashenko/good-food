@@ -202,6 +202,12 @@ body {
   margin: 0 auto 20px;
 }
 
+/* ----- Menu Bootstrap ----- */
+/* .card {
+  padding-right: 0;
+  padding-left: 0;
+} */
+
 /* ----- Takeaway ----- */
 .takeaway {
   background-color: #fbf1e7;
