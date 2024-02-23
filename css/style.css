@@ -421,14 +421,11 @@ body {
 .footer__link:hover {
   color: #dc780b;
 }
-.socials-icon {
-  color: #d1d1d1;
+.socials__link {
   margin-right: 10px;
 }
-.socials-icon:last-child {
+.socials__link:last-child {
   margin-right: 0;
 }
-.socials-icon:hover {
-  color: #dc780b;
-}
+
 
