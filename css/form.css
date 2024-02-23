@@ -21,9 +21,9 @@
   padding-left: 10px;
   padding-bottom: 8px;
 }
-.contacts__input::placeholder {
-  /* color: #d1d1d1; */
-}
+/* .contacts__input::placeholder {
+  color: #d1d1d1;
+} */
 .contacts__input:focus {
   outline: none;
 }
