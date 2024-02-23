@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="header center-content">
+      <img class="header__logo logo" src="/img/logo.svg" alt="Food Logo" />
+      <nav class="menu-bar">
+        <ul class="menu-bar__items">
+          <li class="menu-bar__list"><a class="menu-bar__link" href="#">Home</a></li>
+          <li class="menu-bar__list"><a class="menu-bar__link" href="#">About us</a></li>
+          <li class="menu-bar__list"><a class="menu-bar__link" href="#">Menu</a></li>
+          <li class="menu-bar__list"><a class="menu-bar__link" href="#">Features</a></li>
+          <li class="menu-bar__list"><a class="menu-bar__link" href="/pages/form.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <button class="header__button button">Booking Now</button>
+    </header>
+
+    <main class="contacts">
+      <img class="contacts__img" src="../img/glen-carrie.jpg" alt="Glen-carrie" />
+      <form class="contacts__form" action="./get-success.html" method="GET" autocomplete="off" target="_blank">
+        <h2 class="contacts__title section-title">Contact us</h2>
+        <div class="contacts__wrap">
+          <label for="username"></label>
+          <input class="contacts__input" type="text" name="username" id="username" placeholder="Username" maxlength="10" minlength="2" />
+        </div>
+        <div class="contacts__wrap">
+          <label for="name"></label>
+          <input class="contacts__input" type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="contacts__wrap">
+          <label for="surname"></label>
+          <input class="contacts__input" type="text" name="surname" id="surname" placeholder="Surname" />
+        </div>
+        <div class="contacts__wrap select">
+          <label class="contacts__label" for="gender">Male</label>
+          <input class="contacts__check" type="radio" name="gender" id="male" value="male" placeholder="Gender" />
+          <label class="contacts__label" for="gender">Female</label>
+          <input class="contacts__check"  type="radio" name="gender" id="female" value="female" placeholder="Gender" />
+          <label class="contacts__label" for="gender">Other</label>
+          <input class="contacts__check"  type="radio" name="gender" id="other" value="other" placeholder="Gender" />
+        </div>
+        <div class="contacts__wrap">
+          <label for="age"></label>
+          <input class="contacts__input" type="number" name="age" id="age" placeholder="Select your currect age" min="18" max="100" required />
+        </div>
+        <div class="contacts__wrap">
+          <label for="dob"></label>
+          <input class="contacts__input" type="date" name="dob" id="dob" placeholder="Select your date of birth" min="1930-01-01" max="2006-01-01" />
+        </div>
+        <div class="contacts__wrap">
+          <label for="email"></label>
+          <input class="contacts__input" type="email" name="email" id="email" placeholder="Your e-mail xxxx@xxx.xxx" required />
+        </div>
+        <div class="contacts__wrap">
+          <label for="phone"></label>
+          <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Your phone number +1(234)-56-78-910" />
+        </div>
+        <div class="contacts__wrap">
+          <label for="site"></label>
+          <input class="contacts__input" type="url" name="site" id="site" placeholder="Provide a link to your personal Site" />
+        </div>
+        <div class="contacts__wrap select">
+          <input  class="contacts__check" type="checkbox" name="agreement" id="agreement" />
+          <label class="contacts__auth-label" for="agreement">By clicking the button below, I agree with Terms of Service and Privacy Policy.</label>
+        </div>
+        <button class="contacts__button button" type="submit">Submit</button>
+        <button class="contacts__button button button--white" type="reset">Clear all</button>
+      </form>
+    </main>
+
+    <footer class="footer footer-contacts">
+      <div class="footer-container center-content">
+        <div>
+          <img src="/img/logo.svg" alt="Logo" />
+          <span>www.company name.com</span>
+          <span>companyname@gmail.com</span>
+          <span>Phone: +1 234-567-89-10</span>
+        </div>
+        <nav class="footer__menu">
+          <h2 class="footer__title">Home</h2>
+          <ul class="footer__menu-items">
+            <li class="footer__list"><a class="footer__link" href="#">Landingpage</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Documentation</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Referral Program</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">UI & UX Design</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Web Design</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__menu">
+          <h2 class="footer__title">Menu</h2>
+          <ul class="footer__menu-items">
+            <li class="footer__list"><a class="footer__link" href="#">Landingpage</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Documentation</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Referral Program</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">UI & UX Design</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Web Design</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__menu">
+          <h2 class="footer__title">Company</h2>
+          <ul class="footer__menu-items">
+            <li class="footer__list"><a class="footer__link" href="#">Landingpage</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Documentation</a></li>
+            <li class="footer__list"><a class="footer__link" href="#">Referral Program</a></li>
+          </ul>
+          <div class="socials">
+            <i class="fa-brands fa-instagram socials-icon"></i>
+            <i class="fa-brands fa-facebook-f socials-icon"></i>
+            <i class="fa-brands fa-twitter socials-icon"></i>
+            <i class="fa-brands fa-youtube socials-icon"></i>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
