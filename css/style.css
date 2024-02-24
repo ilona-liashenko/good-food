@@ -16,6 +16,7 @@ body {
   background-color: #ffffff;
   color: #dc780b;
   transition: all ease 0.3s;
+  transform: scale(1.1);
 }
 .button--white {
   border: 1px solid #dc780b;
@@ -26,7 +27,8 @@ body {
 .button--white:hover {
   background-color: #dc780b;
   color: #ffffff;
-  transition: all ease 0.3s;
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.1);
 }
 .center-content {
   width: 1140px;
@@ -426,6 +428,10 @@ body {
 }
 .socials__link:last-child {
   margin-right: 0;
+}
+.socials__icon:hover {
+  transition: all ease 0.3s;
+  transform: scale(1.2);
 }
 
 
