@@ -263,18 +263,37 @@ body {
 .menu__image-radius {
   border-top-left-radius: 70px;
   border-bottom-right-radius: 70px;
-  /* border-top-right-radius: 8px; */
 }
 .menu__card-radius {
   border-top-left-radius: 70px;
 }
 .menu-boot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menu__boot-description {
+  margin-bottom: 20px;
   text-align: center;
 }
-/* .menu__boot-button {
-  margin-top: 30px;
-  margin-bottom: 30px;
-} */
+.rate-wrap {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-star,
+.fa-plus {
+  color: #dc780b;
+  font-size: 14px;
+}
+.star-grey {
+  color: #d1d1d1;
+}
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
 
 /* ----- Takeaway ----- */
 .takeaway {
