@@ -202,7 +202,7 @@ body {
 }
 
 /* ----- Menu ----- */
-.menu-description {
+/* .menu-description {
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -255,12 +255,25 @@ body {
 .menu button {
   display: block;
   margin: 0 auto 20px;
-}
+} */
+
+
 
 /* ----- Menu Bootstrap ----- */
-/* .card {
-  padding-right: 0;
-  padding-left: 0;
+.menu__image-radius {
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  /* border-top-right-radius: 8px; */
+}
+.menu__card-radius {
+  border-top-left-radius: 70px;
+}
+.menu-boot {
+  text-align: center;
+}
+/* .menu__boot-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
 } */
 
 /* ----- Takeaway ----- */
@@ -428,6 +441,20 @@ body {
 }
 .socials__link:last-child {
   margin-right: 0;
+}
+.socials {
+  width: 20px;
+  height: 20px; 
+  margin-right: 10px;
+  
+}
+.socials:last-child {
+  margin-right: 0;
+}
+.socials__icon {
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 .socials__icon:hover {
   transition: all ease 0.3s;
