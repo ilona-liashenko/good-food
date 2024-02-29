@@ -15,7 +15,7 @@ body {
 .button:hover {
   background-color: #ffffff;
   color: #dc780b;
-  transition: all ease 0.3s;
+  transition: all ease-in-out 0.3s;
   transform: scale(1.1);
 }
 .button--white {
@@ -65,6 +65,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 13px;
   letter-spacing: 3px;
+  transition: letter-spacing 0.3s ease-in-out;
+}
+.section-subtitle:hover {
+  letter-spacing: 5px;
+  transition: .3s ease-in-out;
 }
 
 /* ----- Header ----- */
@@ -98,9 +103,23 @@ body {
 }
 .menu-bar__list {
   margin-right: 40px;
+  position: relative;
 }
 .menu-bar__list:last-child {
   margin-right: 0;
+}
+.menu-bar__list::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #dc780b;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: all .25s ease;
+}
+.menu-bar__list:hover::after {
+  transform: scaleX(1);
 }
 .menu-bar__items {
   display: flex;
