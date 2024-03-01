@@ -1,0 +1,117 @@
+@keyframes titleFadeIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes descriptionFadeIn {
+    from {
+        transform: translateY(20px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pacmanTopEating {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg)
+    }
+}
+@keyframes pacmanBottomEating {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-45deg)
+    }
+}
+
+@keyframes carrotAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pizzaAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes lenomAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes burgerAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes appleAnimation {
+    0%, 100% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+    99% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+}

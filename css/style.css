@@ -101,6 +101,10 @@ body {
   margin-right: 120px;
   cursor: pointer;
 }
+.header__logo:hover {
+  transform: rotateX(360deg);
+  transition: all 1s ease-in-out;
+}
 .menu-bar__list {
   margin-right: 40px;
   position: relative;
@@ -150,9 +154,13 @@ body {
   font-weight: 700;
   margin-bottom: 40px;
   line-height: 57px;
+  animation: titleFadeIn 1s ease-in-out forwards;
+  opacity: 0;
 }
 .banner__description {
   margin-bottom: 40px;
+  animation: descriptionFadeIn 1s ease-in-out .5s forwards;
+  opacity: 0;
 }
 .banner__img-shadow {
   position: absolute;
@@ -160,11 +168,70 @@ body {
   right: 8%;
   z-index: 1;
 }
+.banner__button {
+  margin-bottom: 40px;
+  animation: buttonFadeIn 1s ease-in-out 1.3s forwards;
+  opacity: 0;
+}
+.fruits {
+  position: relative;
+}
+.fruits__icon {
+  font-size: 20px;
+  /* margin-right: 70px; */
+}
+.fa-carrot {
+  color: orange;
+  animation: carrotAnimation 10s ease-in infinite both;
+}
+.fa-pizza-slice {
+  color: sienna;
+  animation: pizzaAnimation 10s ease-in .4s infinite both;
+}
+.fa-lemon {
+  color: yellow;
+  animation: lenomAnimation 10s ease-in .8s infinite both;
+}
+.fa-burger {
+  color: sandybrown;
+  animation: burgerAnimation 10s ease-in 1.2s infinite both;
+}
+.fa-apple-whole {
+  color: red;
+  animation: appleAnimation 10s ease-in 1.6s infinite both;
+}
+.packman {
+  position: relative;
+}
+.pacman--top {
+  position: absolute;
+  z-index: 1;
+  bottom: -25px;
+  left: 0;
+  width: 35px;
+  border: 35px solid #ffff6d;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: pacmanTopEating .5s linear infinite;
+}
+.pacman--bottom {
+  position: absolute;
+  bottom: -25px;
+  z-index: 1;
+  left: 0;
+  width: 35px;
+  border: 35px solid #ffff6d;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  animation: pacmanBottomEating .5s linear infinite;
+}
 
 /* ----- Features ----- */
 .features__content {
   display: flex;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .features-item {
   padding: 20px;
