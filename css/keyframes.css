@@ -115,3 +115,38 @@
         transform: translateX(-90px);
     }
 }
+
+
+@keyframes gridShowData {
+    50% {
+        transform: translateY(-45px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+@keyframes gridRemoveOverflow {
+    to {
+        overflow: initial;
+    }
+}
+@keyframes gridRemoveData {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(35px);
+    }
+}
+@keyframes gridShowOverflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+}

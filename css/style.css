@@ -385,7 +385,7 @@ body {
 .grid-wrapper {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-  gap: 20px;
+  gap: 35px 20px;
 }
 .menu-grid__description {
   display: block;
@@ -453,6 +453,49 @@ margin: 20px auto 20px;
 }
 
 
+.grid-card {
+  position: relative;
+  overflow: hidden;
+}
+.grid-card__data {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 330px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -45px;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+  position: absolute;
+}
+.grid-card:hover .grid-card__data {
+  animation: gridShowData 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.grid-card:hover {
+  animation: gridRemoveOverflow 2s forwards;
+}
+.grid-card:not(hover) {
+  animation: gridShowOverflow 2s forwards;
+}
+.grid-card:not(hover) .grid-card__data {
+  animation: gridRemoveData 1s forwards;
+}
+.grid-card__descr-title {
+  font-size: 18px;
+  color: #dc780b;
+}
+.grid-card__descr {
+  font-size: 16px;
+  line-height: 24px;
+}
 
 /* ----- Takeaway ----- */
 .takeaway {
